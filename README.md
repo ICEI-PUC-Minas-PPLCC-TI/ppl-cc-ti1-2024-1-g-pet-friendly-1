@@ -1,4 +1,4 @@
-# Nome do projeto
+# Acessibilidade a lugares Pet Frienly na cidade de Belo Horizonte
 
 Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
