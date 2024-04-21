@@ -1,6 +1,6 @@
 # Acessibilidade a lugares Pet Frienly
 
-O objetivo principal deste projeto é promover a acessibilidade a lugares pet friendly no Brasil, através de ações que: aumentem a quantidade de locais que aceitam animais de estimação. Melhoram a estrutura e os serviços oferecidos em locais pet friendly. Incentivem a criação de espaços públicos e privados que sejam adequados para animais. Promovam a conscientização sobre a importância da inclusão animal.
+O objetivo principal deste projeto é promover a acessibilidade a lugares pet friendly no Brasil, através de um aplicativo que conecte donos de pet e estabelecimentos pet-friendly com a finalidade de: aumentar a quantidade de locais que aceitam animais de estimação. Melhorar a estrutura e os serviços oferecidos em locais pet friendly. Incentivar a criação de espaços públicos e privados que sejam adequados para animais. Promover a conscientização sobre a importância da inclusão animal.
 
 ## Alunos integrantes da equipe
 
