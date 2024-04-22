@@ -16,13 +16,11 @@ O template para o site é estruturado e permite que a equipe evolua a documenta�
 
 # Orientações gerais
 
-Esta seção traz explicações breves sobre o conjunto de artefatos que precisam ser incluídos na documentação do projeto com uma conjunto de links importantes para que se entenda como criar cada coisa. 
+As mudanças que vêm acontecendo na sociedade, afetam as estruturas que nela existem, incluindo a relação do ser humano com o seu animal de estimação. O atual projeto tem como intuito a pesquisa sobre lugares “pet friendly” na cidade de Belo Horizonte, Minas Gerais. O objetivo do trabalho é a busca por lugares em que são aceitos animais de estimação. A relação entre humanos e animais de estimação transcende a simples companhia. Cães, gatos e outros bichos de estimação se tornaram membros da família, proporcionando amor incondicional e momentos de alegria. Essa conexão profunda impulsiona a busca por maior inclusão em diversos aspectos da vida, incluindo a acessibilidade a lugares pet friendly.
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+No Brasil,há algum tempo, a população de animais de estimação cresceu consideravelmente. Segundo o IBGE, “em 2015, 52,2 milhões de lares brasileiros possuíam pelo menos um animal de estimação.”. Essa realidade faz com que os estabelecimentos comerciais, e espaços de lazer adaptam-se para receber os pets junto com seus tutores. No entanto, a falta de acessibilidade a lugares pet friendly é um problema persistente, que gera diversos desafios para os tutores e seus animais, como a dificuldade de encontrar lugares para levar o pet. Os tutores frequentemente se deparam com a falta de informações sobre locais que aceitam animais, o que limita suas opções de lazer e atividades. Outro desafio seria a falta de opções de atividades para pets, já que mesmo em locais pet friendly, a variedade de atividades para os animais pode ser limitada, o que impede que eles se divirtam e se socializem de forma adequada. Ou até a necessidade de deixar o pet em casa, em muitas situações, os tutores são obrigados a deixar seus pets em casa por falta de alternativas, o que causa sofrimento para os animais e frustração para os tutores.
 
 **Links Úteis**:
 
@@ -32,7 +30,7 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+O objetivo principal deste projeto é promover a acessibilidade a lugares pet friendly no Brasil, através de ações que:Aumentem a quantidade de locais que aceitam animais de estimação.Melhoram a estrutura e os serviços oferecidos em locais pet friendly.Incentivem a criação de espaços públicos e privados que sejam adequados para animais.Promovam a conscientização sobre a importância da inclusão animal.
 
 **Links Úteis**:
 
@@ -40,9 +38,8 @@ Aqui você deve descrever os objetivos do trabalho indicando que o objetivo gera
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A acessibilidade a lugares pet friendly é fundamental por diversos motivos:Bem-estar animal: Permite que os animais de estimação desfrutem de atividades físicas, contato com a natureza e socialização com outros animais, o que contribui para seu bem-estar físico e mental.Saúde pública: A inclusão de animais em espaços públicos pode contribuir para a redução de animais abandonados e para a promoção da saúde pública, através da conscientização sobre a responsabilidade dos tutores.Desenvolvimento social: A inclusão de animais em diversos ambientes contribui para o desenvolvimento social, pois promove a interação entre pessoas e animais, além de gerar novas oportunidades de negócio.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
 
 **Links Úteis**:
 
@@ -50,9 +47,7 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
+Podemos identificar o público alvo do projeto por: Tutores de animais de estimação, que buscam lugares para levar seus pets e desfrutar de atividades juntos. E estabelecimentos comerciais: Lojas, restaurantes, hotéis e outros estabelecimentos comerciais que desejam ampliar seu público e oferecer um serviço diferenciado para os tutores de animais de estimação. Um outro público alvo que também é importante citar são as ONGs, associações de proteção animal e outros grupos que podem contribuir para a conscientização sobre a importância da proteção aos animais.
 
 **Links Úteis**:
 
@@ -61,7 +56,30 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 
 ## Personas
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
+Persona Sofia
+Ganhos: Poderá encontrar locais tranquilos e aconchegantes para praticar a leitura na companhia de sua gata.
+Dores: Falta de informações sobre estabelecimentos pet-friendly.
+Tarefas do Cliente: Ela está procurando estabelecimentos para levar sua gata, onde deixe o pet a vontade.
+Analgésicos: Indicará estabelecimentos que podem auxiliar em seu desejo.
+Produtos e serviços:
+Agregador de estabelecimentos Pet friendly.
+Indicadores de ganho: Design simples e informativo de estabelecimentos pet friendly
+
+Persona Bernardo Costa
+Tarefas do Cliente: Encontrar, em locais novos os quais vai praticar seu hobby que possam proporcionar uma experiência positiva  tanto para ele quanto para o seu pet.
+Analgésicos: Indicará estabelecimentos que podem conciliar seu hobby com o desejo de proporcionar experiências positivas para o seu pet.
+Produtos e serviços:
+Agregador de estabelecimentos Pet friendly
+Indicadores de ganho: Design simples e informativo de estabelecimentos pet friendly
+
+Persona Clara
+Ganhos: Ela poderá estudar sobre a alimentação de animais mediante os locais pet-friendly, indicados pelo aplicativo, que possuem serviços não só para os tutores, mas também para os animais, como alimentação.
+Dores: Falta de informações sobre estabelecimentos pet-friendly e receitas
+Tarefas do Cliente: Ela está procurando objetos de estudo para escrever seu livro de receitas pet friendly 
+Analgésicos: Indicará estabelecimentos que podem auxiliar em seu sonho
+Produtos e serviços:
+Agregador de estabelecimentos Pet friendly
+Indicadores de ganho: Design simples e informativo de estabelecimentos pet friendly
 
 **Links Úteis**:
 
@@ -72,7 +90,16 @@ Relacione as personas identificadas no seu projeto e os respectivos mapas de emp
 
 ## Histórias de Usuários
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+O que é um lugar Pet Friendly?
+Um Pet Friendly é um local que acolhe e recebe animais de estimação de forma receptiva. Isso significa que o ambiente é preparado para garantir o bem-estar e a segurança dos pets, oferecendo espaço adequado para circulação, brincadeiras e interação, além de regras e normas que garantem a harmonia entre animais e pessoas.
+
+O ambiente ele tem opção de refeições específicas para os Pets?
+Sim, muitos Pet Cafés oferecem um cardápio especial para pets, com opções nutritivas e saborosas preparadas com ingredientes frescos e de alta qualidade.
+
+Qual o diferencial que o lugar tem para o Animal de Estimação?
+Além de um ambiente acolhedor e seguro, o Pet Café oferece diversos diferenciais para os animais de estimação, como:
+Brinquedos e atividades: Diversos brinquedos e atividades interativas para estimular o animal.
+Espaço para socialização: Oportunidade para os pets interagirem com outros animais e pessoas, promovendo a socialização
 
 **Links Úteis**:
 
@@ -81,14 +108,10 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ## Requisitos
 
-Os requisitos de um projeto são classificados em dois grupos:
-
-- [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
-  correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
-
-Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+Cadastro/Login de usuário
+Permissão para ver a localização do usuário
+Compras no site
+Suporte dispositivos IOS/Android
 
 **Links Úteis**:
 
@@ -97,7 +120,7 @@ Lembre-se que cada requisito deve corresponder à uma e somente uma característ
 
 ## User Flow
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+Home > Login/Cadastro > Produto/Serviços/Locais-por-perto > Sair
 
 **Links Úteis**:
 
@@ -107,7 +130,8 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 ## Wireframes
 
-Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
+Figma:
+https://www.figma.com/file/IMEpeK5voIaTZ1U0nKyoRd/Untitled?type=design&mode=design&t=BTlTdJayoTi2ruPa-1
 
 **Links Úteis**:
 
@@ -118,7 +142,7 @@ Wireframes são protótipos das telas da aplicação usados em design de interfa
 
 ## Gestão de Projetos
 
- Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
+Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
 
 Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
 
