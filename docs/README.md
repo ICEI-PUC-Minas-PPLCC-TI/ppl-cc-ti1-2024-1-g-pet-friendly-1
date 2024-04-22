@@ -20,7 +20,7 @@ As mudanças que vêm acontecendo na sociedade, afetam as estruturas que nela ex
 
 ## Problema
 
-No Brasil,há algum tempo, a população de animais de estimação cresceu consideravelmente. Segundo o IBGE, “em 2015, 52,2 milhões de lares brasileiros possuíam pelo menos um animal de estimação.”. Essa realidade faz com que os estabelecimentos comerciais, e espaços de lazer adaptam-se para receber os pets junto com seus tutores. No entanto, a falta de acessibilidade a lugares pet friendly é um problema persistente, que gera diversos desafios para os tutores e seus animais, como a dificuldade de encontrar lugares para levar o pet. Os tutores frequentemente se deparam com a falta de informações sobre locais que aceitam animais, o que limita suas opções de lazer e atividades. Outro desafio seria a falta de opções de atividades para pets, já que mesmo em locais pet friendly, a variedade de atividades para os animais pode ser limitada, o que impede que eles se divirtam e se socializem de forma adequada. Ou até a necessidade de deixar o pet em casa, em muitas situações, os tutores são obrigados a deixar seus pets em casa por falta de alternativas, o que causa sofrimento para os animais e frustração para os tutores.
+No Brasil, há algum tempo, a população de animais de estimação cresceu consideravelmente. Segundo o IBGE, “em 2015, 52,2 milhões de lares brasileiros possuíam pelo menos um animal de estimação.”. Essa realidade faz com que os estabelecimentos comerciais, e espaços de lazer adaptem-se para receber os pets junto com seus tutores. No entanto, a falta de acessibilidade a lugares pet friendly é um problema persistente, que gera diversos desafios para os tutores e seus animais, como a dificuldade de encontrar lugares para levar o pet. Os tutores frequentemente se deparam com a falta de informações sobre locais que aceitam animais, o que limita suas opções de lazer e atividades. Outro desafio seria a falta de opções de atividades para pets, já que mesmo em locais pet friendly, a variedade de atividades para os animais pode ser limitada, o que impede que eles se divirtam e se socializem de forma adequada. Ou até a necessidade de deixar o pet em casa, em muitas situações, os tutores são obrigados a deixar seus pets em casa por falta de alternativas, o que causa sofrimento para os animais e frustração para os tutores.
 
 **Links Úteis**:
 
@@ -30,7 +30,7 @@ No Brasil,há algum tempo, a população de animais de estimação cresceu consi
 
 ## Objetivos
 
-O objetivo principal deste projeto é promover a acessibilidade a lugares pet friendly no Brasil, através de ações que:Aumentem a quantidade de locais que aceitam animais de estimação.Melhoram a estrutura e os serviços oferecidos em locais pet friendly.Incentivem a criação de espaços públicos e privados que sejam adequados para animais.Promovam a conscientização sobre a importância da inclusão animal.
+O objetivo principal deste projeto é criar um software que conecte donos de pet e estabelecimentos pet-friendly para promover a acessibilidade a lugares pet friendly no Brasil e também com a finalidade de: aumentar a quantidade de locais que aceitam animais de estimação. Melhorar a estrutura e os serviços oferecidos em locais pet friendly. Incentivar a criação de espaços públicos e privados que sejam adequados para animais. Promover a conscientização sobre a importância da inclusão animal.
 
 **Links Úteis**:
 
@@ -38,7 +38,7 @@ O objetivo principal deste projeto é promover a acessibilidade a lugares pet fr
 
 ## Justificativa
 
-A acessibilidade a lugares pet friendly é fundamental por diversos motivos:Bem-estar animal: Permite que os animais de estimação desfrutem de atividades físicas, contato com a natureza e socialização com outros animais, o que contribui para seu bem-estar físico e mental.Saúde pública: A inclusão de animais em espaços públicos pode contribuir para a redução de animais abandonados e para a promoção da saúde pública, através da conscientização sobre a responsabilidade dos tutores.Desenvolvimento social: A inclusão de animais em diversos ambientes contribui para o desenvolvimento social, pois promove a interação entre pessoas e animais, além de gerar novas oportunidades de negócio.
+Por conta de uma crescente busca por locais pet-friendly, e o aumentos de novos locais que aceitam animais de estimação a criação de um software capz de integrar ambos os lados é essencial. Além de a acessibilidade a lugares pet friendly é fundamental por diversos motivos como o bem-estar animal que permite que os animais de estimação desfrutem de atividades físicas, contato com a natureza e socialização com outros animais, o que contribui para seu bem-estar físico e mental. A inclusão de animais em espaços públicos pode contribuir para a redução de animais abandonados. A inclusão de animais em diversos ambientes contribui para o desenvolvimento social, pois promove a interação entre pessoas e animais.
 
 
 **Links Úteis**:
@@ -47,7 +47,7 @@ A acessibilidade a lugares pet friendly é fundamental por diversos motivos:Bem-
 
 ## Público-Alvo
 
-Podemos identificar o público alvo do projeto por: Tutores de animais de estimação, que buscam lugares para levar seus pets e desfrutar de atividades juntos. E estabelecimentos comerciais: Lojas, restaurantes, hotéis e outros estabelecimentos comerciais que desejam ampliar seu público e oferecer um serviço diferenciado para os tutores de animais de estimação. Um outro público alvo que também é importante citar são as ONGs, associações de proteção animal e outros grupos que podem contribuir para a conscientização sobre a importância da proteção aos animais.
+Podemos identificar o público alvo do projeto por: tutores de animais de estimação, que buscam lugares para levar seus pets e desfrutar de atividades juntos, estes sendo os que mais usarão o aplicativo recorrentemente e na sua maioria são adultos / jovens adultos que utilizam de tecnologias no seu dia a dia como aplicativos e sites do seu interesse. E estabelecimentos comerciais como lojas, restaurantes, hotéis e outros que desejam ampliar seu público e oferecer um serviço diferenciado para os tutores de animais de estimação, estes usando o aplicativo para conseguir mais clientes divulgando o seu estabelecimento em nosso software.
 
 **Links Úteis**:
 
