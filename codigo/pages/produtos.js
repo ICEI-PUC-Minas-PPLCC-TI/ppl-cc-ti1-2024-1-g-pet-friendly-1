@@ -1,18 +1,18 @@
 const jsonData1 = {
   imagem: "https://i.imgur.com/XJOV5cz.png",
-  nome: "Elfo"
+  nome: "Biscoito"
 };
 const jsonData2 = {
   imagem: "https://i.imgur.com/fnucWNM.png",
-  nome: "Biscoito"
+  nome: "Branca de Neve"
 };
 const jsonData3 = {
   imagem: "https://i.imgur.com/pOdy70A.png",
-  nome: "T-rex"
+  nome: "Elfo"
 };
 const jsonData4 = {
   imagem: "https://i.imgur.com/vGdoU6f.png",
-  nome: "Branca de neve"
+  nome: "T-rex"
 };
 
 function preencherDados(idImagem, idNome, data) {
