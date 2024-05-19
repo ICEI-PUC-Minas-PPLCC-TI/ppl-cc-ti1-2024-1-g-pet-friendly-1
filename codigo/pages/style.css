@@ -26,3 +26,30 @@ html{
 h6{
   color: #d6660a; 
 }
+.productStyle{
+  border: 1px solid #CBCBCB !important;
+  border-radius: 30px;
+  width: 180px !important;
+}
+.container{
+  max-width: 100% !important;
+}
+.productStyle button{
+  background-color: #48067f;
+  margin-bottom: 13px;
+}
+.serviceStyle{
+  border: 1px solid #CBCBCB !important;
+  border-radius: 27px;
+  padding: 0;
+  width: 32% !important;
+}
+
+.serviceStyle button{
+  background-color: #48067f;
+  margin-bottom: 13px;
+}
+.product-cont{
+  gap: 12px;
+  margin-left: 40px;
+}
