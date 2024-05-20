@@ -3,7 +3,7 @@ async function login() {
     const senha = document.getElementById('senhaLogin').value;
 
     try {
-        const response = await fetch('http://localhost:3000/usuarios', {
+        const response = await fetch('https://json-pet1.vercel.app/usuarios', {
             method: 'GET',
         });
 
@@ -52,7 +52,7 @@ async function cadastrarUsuario() {
     const senhaUsuario = document.getElementById('senhaUsuario').value;
 
     try {
-        const response = await fetch('http://localhost:3000/usuarios', {
+        const response = await fetch('https://json-pet1.vercel.app/usuarios', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

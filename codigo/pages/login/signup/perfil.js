@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function() {
     try {
-        const response = await fetch('http://localhost:3000/usuarios');
+        const response = await fetch('https://json-pet1.vercel.app/usuarios');
         
         if (!response.ok) { // Verifica se a resposta é válida
             throw new Error(`HTTP error status: ${response.status}`);

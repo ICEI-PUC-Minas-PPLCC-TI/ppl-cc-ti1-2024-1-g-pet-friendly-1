@@ -8,7 +8,7 @@ document.getElementById('formCadastro').addEventListener('submit', function(e) {
     var novoProduto = { id: Date.now(), nome: nomeProduto, imagem: urlImagem };
 
     // Substituindo localStorage pela chamada à API
-    fetch('http://localhost:3000/produtos', {
+    fetch('https://json-pet1.vercel.app/produtos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
