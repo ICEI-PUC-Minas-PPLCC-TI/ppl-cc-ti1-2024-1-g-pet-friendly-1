@@ -1,0 +1,55 @@
+{
+  "produtos": [
+    {
+      "nome": "Elfo",
+      "imagem": "https://i.imgur.com/pOdy70A.png",
+      "id": 1716157998744
+    },
+    {
+      "nome": "T-rex",
+      "imagem": "https://i.imgur.com/vGdoU6f.png",
+      "id": 1716158068342
+    },
+    {
+      "id": 1716169214778,
+      "nome": "Biscoito",
+      "imagem": "https://i.imgur.com/XJOV5cz.png"
+    }
+  ],
+  "servicos": [
+    {
+      "id": 1716158623525,
+      "nome": "PetShop",
+      "imagem": "https://i.imgur.com/IKNfz4X.png",
+      "atendimentos": "Temos os mais diversos produtos e medicamentos."
+    },
+    {
+      "id": 1716169243648,
+      "imagem": "https://i.imgur.com/2GS10cY.png",
+      "nome": "Banho e tosa",
+      "atendimentos": "Ambiente separado para cães, gatos e filhotes"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1716161234279,
+      "usuario": "admin",
+      "senha": "admin1234"
+    },
+    {
+      "id": 1716161066494,
+      "usuario": "admin2",
+      "senha": "adm"
+    },
+    {
+      "id": 1716161114279,
+      "usuario": "admin3",
+      "senha": "ad2"
+    },
+    {
+      "id": 1716166905430,
+      "usuario": "amin",
+      "senha": "aa"
+    }
+  ]
+}

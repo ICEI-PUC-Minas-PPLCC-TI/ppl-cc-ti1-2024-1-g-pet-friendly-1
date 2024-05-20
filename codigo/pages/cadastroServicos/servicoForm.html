@@ -15,25 +15,28 @@
 <body>
   <header class="container-fluid">
     <div class="d-flex flex-column flex-md-row align-items-center">
-        <a href="../home/index.html"><img src="../imagens/logoPet.png" width="130px" height="100px" alt="Logo" class="me-3"></a>
+        <a href="../index.html"><img src="../imagens/logoPet.png" width="130px" height="100px" alt="Logo" class="me-3"></a>
       <nav class="d-flex flex-column flex-md-row justify-content-between w-100">
         <ul class="nav flex-column flex-md-row">
           <li class="nav-item">
             <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="#">Locais</a>
           </li>
           <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="#">Produtos</a>
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="./cadastroProduto/produto.html">Produtos</a>
           </li>
           <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="#">Serviços</a>
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="./servicos.html">Serviços</a>
           </li>
         </ul>
         <ul class="nav flex-column flex-md-row">
           <li class="nav-item">
-            <a id="cor" class="nav-link text-light rounded-4 px-3 fs-5 fs-md-4 fw-bold" href="#">Logar</a>
+            <a id="logarLink" class="nav-link text-light rounded-4 px-3 fs-5 fs-md-4 fw-bold" href="../login/signup/loginForm.html" style="background-color: #d6660a;">Logar</a>
           </li>
           <li class="nav-item mt-2 mt-md-0 ms-md-2">
-            <a id="cor" class="nav-link text-light rounded-4 px-3 fs-5 fs-md-4 fw-bold" href="#">Se inscrever</a>
+            <a id="inscreverLink" class="nav-link text-light rounded-4 px-3 fs-5 fs-md-4 fw-bold" href="../login/signup/cadastroForm.html" style="background-color: #d6660a;">Se inscrever</a>
+          </li>
+          <li class="nav-item mt-2 mt-md-0 ms-md-2">
+            <a id="contaIcon" class="nav-link text-light rounded-4 px-3 fs-5 fs-md-4 fw-bold" href="../login/signup/perfil.html" style="background-color: #d6660a;">Conta</a>
           </li>
         </ul>
       </nav>
@@ -41,20 +44,36 @@
     <hr style="border-top: 2px solid black; width: 100%;margin-top: 0px;">
   </header>
 
-  <h1>Cadastre um Novo Serviço</h1>
-    <form id="formServico">
-        <label for="urlImagem">URL da Imagem:</label><br>
-        <input type="text" id="urlImagem" name="urlImagem"><br>
-        <label for="nomeServico">Nome do Serviço:</label><br>
-        <input type="text" id="nomeServico" name="nomeServico"><br>
-        <label for="horarioAtendimento">Horário de Atendimento:</label><br>
-        <input type="text" id="horarioAtendimento" name="horarioAtendimento"><br>
-        <input type="submit" value="Adicionar Serviço">
-    </form>
+  <h1 style="color: #48067f; text-align: center; font-family: Arial, sans-serif;">Cadastre um Novo Serviço</h1>
+  <form id="formServico" style="max-width: 400px; margin: 0 auto; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+      <label for="urlImagem" style="color: #48067f; font-family: Arial, sans-serif; display: block; margin-bottom: 5px;">URL da Imagem:</label>
+      <input type="text" id="urlImagem" name="urlImagem" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
+      <label for="nomeServico" style="color: #48067f; font-family: Arial, sans-serif; display: block; margin-bottom: 5px;">Nome do Serviço:</label>
+      <input type="text" id="nomeServico" name="nomeServico" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
+      <label for="horarioAtendimento" style="color: #48067f; font-family: Arial, sans-serif; display: block; margin-bottom: 5px;">Horário de Atendimento:</label>
+      <input type="text" id="horarioAtendimento" name="horarioAtendimento" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
+      <input type="submit" value="Adicionar Serviço" style="width: 100%; background-color: rgb(214, 102, 10); color: white; border: none; padding: 10px 20px; border-radius: 5px; font-family: Arial, sans-serif; cursor: pointer;">
+  </form>
+
 
     <script src="servicos.js"></script>
     <script src="cadastroS.js"></script>
-
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+    
+        if (usuarioLogado) {
+          document.getElementById('logarLink').style.display = 'none';
+          document.getElementById('inscreverLink').style.display = 'none';
+          document.getElementById('contaIcon').style.display = 'inline-block';
+        } else {
+          document.getElementById('contaIcon').style.display = 'none';
+          document.getElementById('logarLink').style.display = 'inline-block';
+          document.getElementById('inscreverLink').style.display = 'inline-block';
+        }
+      });
+    </script>
+    <script src="../login/signup/auth.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

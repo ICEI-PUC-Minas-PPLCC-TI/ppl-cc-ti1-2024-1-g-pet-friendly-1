@@ -22,7 +22,7 @@
             <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="#">Locais</a>
           </li>
           <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="./cadastroProduto/produto.html">Produtos</a>
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="#">Produtos</a>
           </li>
           <li class="nav-item">
             <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroServicos/servicos.html">Serviços</a>
@@ -44,17 +44,21 @@
     <hr style="border-top: 2px solid black; width: 100%;margin-top: 0px;">
   </header>
 
-  <h1 style="color: #48067f; text-align: center; font-family: Arial, sans-serif;">Cadastre um Novo Produto</h1>
-  <form id="formCadastro" style="max-width: 400px; margin: 0 auto; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-      <label for="nomeProduto" style="color: #48067f; font-family: Arial, sans-serif; display: block; margin-bottom: 5px;">Nome do Produto:</label>
-      <input type="text" id="nomeProduto" name="nomeProduto" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
-      <label for="urlImagem" style="color: #48067f; font-family: Arial, sans-serif; display: block; margin-bottom: 5px;">URL da Imagem:</label>
-      <input type="text" id="urlImagem" name="urlImagem" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
-      <input type="submit" value="Cadastrar" style="width: 100%; background-color: rgb(214, 102, 10); color: white; border: none; padding: 10px 20px; border-radius: 5px; font-family: Arial, sans-serif; cursor: pointer;">
-  </form>
+  <section id="Servicos" class="container-fluid">
+    <p id="corT2" class="ms-5 mt-3 text-start fs-1 fw-bold">Nossos produtos</p>
+    <div class="container mt-5" style="margin-top: 19px !important;">
+        <div class="product-cont row row-cols-1 row-cols-md-4 g-4" style="  
+        display: flex;
+        justify-content: center;
+        align-items: center;">
+        
+        </div>
+    </div>
+  </section>
 
-
-    <script src="cadastro.js"></script>
+    <script src="./produtos.js"></script>
+    <script src="./cadastro.js"></script>
+    <script src="../login/signup/auth.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));

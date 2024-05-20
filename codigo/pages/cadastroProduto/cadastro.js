@@ -4,11 +4,24 @@ document.getElementById('formCadastro').addEventListener('submit', function(e) {
     var nomeProduto = document.getElementById('nomeProduto').value;
     var urlImagem = document.getElementById('urlImagem').value;
 
-    var produtosArmazenados = JSON.parse(localStorage.getItem('produtos')) || [];
+    // Adicionando um campo 'id' fictício para demonstração
+    var novoProduto = { id: Date.now(), nome: nomeProduto, imagem: urlImagem };
 
-    produtosArmazenados.push({ nome: nomeProduto, imagem: urlImagem });
-
-    localStorage.setItem('produtos', JSON.stringify(produtosArmazenados));
-
-    alert('Produto cadastrado com sucesso Agora, atualize a página principal.');
+    // Substituindo localStorage pela chamada à API
+    fetch('http://localhost:3000/produtos', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(novoProduto)
+    })
+  .then(response => response.json())
+  .then(data => {
+        if (data.success) {
+            alert('Produto cadastrado com sucesso. Agora, atualize a página principal.');
+        } else {
+            alert('Produto cadastrado com sucesso.');
+        }
+    })
+  .catch(error => console.error('Erro:', error));
 });
