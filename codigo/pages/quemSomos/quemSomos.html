@@ -14,33 +14,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="d-flex flex-column flex-md-row align-items-center">
-          <img src="..\imagens\logoPet.png" width="130px" height="100px" alt="Logo" class="me-3">
-          <nav class="d-flex flex-column flex-md-row justify-content-between w-100">
-            <ul class="nav flex-column flex-md-row">
-              <li class="nav-item">
-                <a id="corT" class="montserrat-title nav-link fs-4" href="#">Locais</a>
-              </li>
-              <li class="nav-item">
-                <a id="corT" class="montserrat-title nav-link fs-4" href="#">Produtos</a>
-              </li>
-              <li class="nav-item">
-                <a id="corT" class="montserrat-title nav-link fs-4" href="#">Serviços</a>
-              </li>
-            </ul>
-            <ul class="nav flex-column flex-md-row">
-              <li class="nav-item">
-                <a id="cor" class="nav-link text-light rounded-4 px-4 fs-4 fs-md-4 fw-bold" href="#">Logar</a>
-              </li>
-              <li class="nav-item mt-2 mt-md-0 ms-md-2">
-                <a id="cor" class="nav-link text-light rounded-4 px-5 fs-4 fs-md-4 fw-bold" href="#">Se inscrever</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <hr style="border-top: 2px solid black; width: 100%;margin-top: 0px;">
-      </header>
+  <header class="container-fluid">
+    <div class="d-flex flex-column flex-md-row align-items-center">
+      <a href="../index.html"><img src="../imagens/logoPet.png" width="130px" height="100px" alt="Logo" class="me-3"></a>
+      <nav class="d-flex flex-column flex-md-row justify-content-between w-100">
+        <ul class="nav flex-column flex-md-row">
+          <li class="nav-item">
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="#">Locais</a>
+          </li>
+          <li class="nav-item">
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="./cadastroProduto/produto.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="cadastroServicos/servicos.html">Serviços</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column flex-md-row">
+          <li class="nav-item">
+            <a id="logarLink" class="nav-link text-light rounded-4 px-3 fs-5 fs-md-4 fw-bold" href="./login/signup/loginForm.html" style="background-color: #d6660a;">Logar</a>
+          </li>
+          <li class="nav-item mt-2 mt-md-0 ms-md-2">
+            <a id="inscreverLink" class="nav-link text-light rounded-4 px-3 fs-5 fs-md-4 fw-bold" href="./login/signup/cadastroForm.html" style="background-color: #d6660a;">Se inscrever</a>
+          </li>
+          <li class="nav-item mt-2 mt-md-0 ms-md-2">
+            <a id="contaIcon" class="nav-link text-light rounded-4 px-3 fs-5 fs-md-4 fw-bold" href="./login/signup/perfil.html" style="background-color: #d6660a; display: none;">Conta</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <hr style="border-top: 2px solid black; width: 100%;margin-top: 0px;">
+  </header>
 
       <section id="Quem Somos" class="container-fluid">
         <div class="row align-items-center">
@@ -160,7 +163,7 @@
             </div>
             <div class="col-md">
               <h6 class="mb-2">Empresa</h6>
-                <a class="text-light nav-link" href="Quem Somos.html">Quem Somos</a>
+                <a class="text-light nav-link" href="..\quemSomos.html">Quem Somos</a>
                 <a class="text-light nav-link" href="#">Nossa Equipe</a>
                 <a class="text-light nav-link" href="#">Contato</a>
             </div>
