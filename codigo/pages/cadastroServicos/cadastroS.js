@@ -14,7 +14,7 @@ document.getElementById('formServico').addEventListener('submit', function(e) {
     };
 
     // Substituindo localStorage pela chamada à API
-    fetch('https://json-pet1.vercel.app/servicos', {
+    fetch('https://api-render-pet.onrender.com/servicos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

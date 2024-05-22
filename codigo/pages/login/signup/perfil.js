@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function() {
     try {
-        const response = await fetch('https://json-pet1.vercel.app/usuarios');
+        const response = await fetch('https://api-render-pet.onrender.com/usuarios');
         
         if (!response.ok) { // Verifica se a resposta é válida
             throw new Error(`HTTP error status: ${response.status}`);

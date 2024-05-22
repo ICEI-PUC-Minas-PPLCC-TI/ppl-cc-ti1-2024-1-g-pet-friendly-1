@@ -1,7 +1,7 @@
 // Carrega e exibe produtos
 async function loadAndDisplayProducts() {
     try {
-        const response = await fetch('https://json-pet1.vercel.app/produtos', {
+        const response = await fetch('https://api-render-pet.onrender.com/produtos', {
             method: 'GET',
         });
 
@@ -29,7 +29,7 @@ async function loadAndDisplayProducts() {
 // Carrega e exibe serviços
 async function loadAndDisplayServices() {
     try {
-        const response = await fetch('https://json-pet1.vercel.app/servicos', {
+        const response = await fetch('https://api-render-pet.onrender.com/servicos', {
             method: 'GET',
         });
 
@@ -65,7 +65,7 @@ async function editService(index, serviceId) {
 
     if (newName && newImageURL && newDescription) {
         try {
-            const response = await fetch(`https://json-pet1.vercel.app/servicos/${serviceId}`, {
+            const response = await fetch(`https://api-render-pet.onrender.com/servicos/${serviceId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -90,7 +90,7 @@ async function editService(index, serviceId) {
 // Função para deletar um serviço
 async function deleteService(index, serviceId) {
     try {
-        const response = await fetch(`https://json-pet1.vercel.app/servicos/${serviceId}`, {
+        const response = await fetch(`https://api-render-pet.onrender.com/servicos/${serviceId}`, {
             method: 'DELETE',
         });
 
@@ -122,7 +122,7 @@ async function editProduct(index, productId) {
 
     if (newName && newImageURL) {
         try {
-            const response = await fetch(`https://json-pet1.vercel.app/produtos/${productId}`, {
+            const response = await fetch(`https://api-render-pet.onrender.com/produtos/${productId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -147,7 +147,7 @@ async function editProduct(index, productId) {
 // Função para deletar um produto
 async function deleteProduct(index, productId) {
     try {
-        const response = await fetch(`https://json-pet1.vercel.app/produtos/${productId}`, {
+        const response = await fetch(`https://api-render-pet.onrender.com/produtos/${productId}`, {
             method: 'DELETE',
         });
 

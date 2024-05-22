@@ -1,6 +1,6 @@
 window.onload = function() {
     // Substituindo localStorage pela chamada à API
-    fetch('https://json-pet1.vercel.app/produtos')
+    fetch('https://api-render-pet.onrender.com/produtos')
      .then(response => response.json())
      .then(produtos => {
           produtos.forEach(function(produto, index) {

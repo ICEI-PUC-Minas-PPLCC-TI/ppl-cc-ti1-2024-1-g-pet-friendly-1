@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     function loadServices() {
         // Substituindo localStorage pela chamada à API
-        fetch('https://json-pet1.vercel.app/servicos')
+        fetch('https://api-render-pet.onrender.com/servicos')
         .then(response => response.json())
         .then(servicos => {
               servicos.forEach(function(servico, index) {
