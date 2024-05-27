@@ -113,6 +113,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Carrega e exibe serviços
     loadAndDisplayServices();
+
+    // Carrega e exibe locais
+    loadAndDisplayLocations();
 });
 
 // Função para editar um produto
@@ -159,5 +162,84 @@ async function deleteProduct(index, productId) {
     } catch (error) {
         console.error('Erro:', error);
         alert('Erro ao deletar produto.');
+    }
+}
+
+// Carrega e exibe locais
+async function loadAndDisplayLocations() {
+    try {
+        const response = await fetch('https://api-render-pet.onrender.com/local', {
+            method: 'GET',
+        });
+
+        if (!response.ok) throw new Error('Erro ao buscar locais');
+
+        const locations = await response.json();
+        const container = document.getElementById('lista-local');
+
+        // Limpa o container antes de adicionar novos elementos
+        container.innerHTML = '';
+
+        locations.forEach((location, index) => {
+            const locationElement = document.createElement('div');
+            locationElement.innerHTML = `
+                <h3>${location.nome}</h3>
+                <img src="${location.imagem}" alt="${location.nome}">
+                <p>${location.endereço}</p>
+                <button onclick="editLocation(${index}, '${location.id}')">Editar</button>
+                <button onclick="deleteLocation(${index}, '${location.id}')">Deletar</button>
+            `;
+            container.appendChild(locationElement);
+        });
+    } catch (error) {
+        console.error('Erro:', error);
+    }
+}
+
+// Função para editar um local
+async function editLocation(index, locationId) {
+    const newName = prompt("Digite o novo nome do local:");
+    const newAddress = prompt("Digite o novo endereço:");
+    const newImageURL = prompt("Digite a nova URL da imagem:");
+
+    if (newName && newAddress && newImageURL) {
+        try {
+            const response = await fetch(`https://api-render-pet.onrender.com/local/${locationId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ nome: newName, imagem: newImageURL, endereço: newAddress })
+            });
+
+            if (!response.ok) throw new Error('Erro ao editar local');
+
+            alert(`${newName} foi editado com sucesso.`);
+            loadAndDisplayLocations(); // Recarrega a lista de locais após a edição
+            location.reload(); // Recarrega a página
+        } catch (error) {
+            console.error('Erro:', error);
+            alert('Erro ao editar local.');
+        }
+    } else {
+        alert("Por favor, preencha ambos os campos.");
+    }
+}
+
+// Função para deletar um local
+async function deleteLocation(index, locationId) {
+    try {
+        const response = await fetch(`https://api-render-pet.onrender.com/local/${locationId}`, {
+            method: 'DELETE',
+        });
+
+        if (!response.ok) throw new Error('Erro ao deletar local');
+
+        alert(`O local foi deletado`);
+        loadAndDisplayLocations(); // Recarrega a lista de locais após a exclusão
+        location.reload(); // Recarrega a página
+    } catch (error) {
+        console.error('Erro:', error);
+        alert('Erro ao deletar local.');
     }
 }
