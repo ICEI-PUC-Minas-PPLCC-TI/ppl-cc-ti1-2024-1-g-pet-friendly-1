@@ -64,6 +64,20 @@
     "nome": "Adoção de Animais",
     "imagem": "https://i.imgur.com/MiQLU5v.jpg",
     "endereço": "Av contorno 851, Savassi"
+  },
+  {
+    "id": 1716838620440,
+    "imagem": "https://i.imgur.com/jNWxKyB.jpg",
+    "nome": "Adote amor",
+    "endereço": "Rua Sergipe 842, Savassi"
   }
+  ],
+  "evento": [
+    {
+      "id": 1716452908437,
+      "nome": "Encontro de goldens da Animalle Mundo Pet",
+      "imagem": "https://i.imgur.com/3khwNB4.jpeg",
+      "descrição": "Atividades de socialização de cães e sorteio de brindes"
+    }
   ]
 }
