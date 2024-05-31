@@ -53,3 +53,15 @@ h6{
   gap: 12px;
   margin-left: 40px;
 }
+
+.locationStyle{
+  border: 1px solid #CBCBCB !important;
+  border-radius: 27px;
+  padding: 0;
+  width: 32% !important;
+}
+
+.locationStyle button{
+  background-color: #48067f;
+  margin-bottom: 13px;
+}

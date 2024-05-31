@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    function loadServices() {
+    function loadLocations() {
         // Substituindo localStorage pela chamada à API
         fetch('https://api-render-pet.onrender.com/local')
         .then(response => response.json())
@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
                   `;
   
                   var col = document.createElement('div');
-                  col.className = "col serviceStyle";
+                  col.className = "col locationStyle";
                   col.style.width = "33%";
                   col.innerHTML = cardBody.outerHTML;
   
-                  var row = document.querySelector('.service-cont');
+                  var row = document.querySelector('.location-cont');
                   if (row) {
                       row.appendChild(col);
                   }
@@ -51,6 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Erro ao carregar local:', error));
     }
   
-    loadServices();
+    loadLocations();
   });
   
