@@ -1,5 +1,4 @@
 window.onload = function() {
-    // Substituindo localStorage pela chamada à API
     fetch('https://api-render-pet.onrender.com/produtos')
      .then(response => response.json())
      .then(produtos => {
@@ -33,8 +32,14 @@ window.onload = function() {
               
               var row = document.querySelector('.product-cont');
               row.appendChild(col);
+              
+              // Adiciona um evento de clique ao botão
+              document.getElementById(`corB2${index + 1}`).addEventListener('click', function() {
+                  // Armazena o ID do produto no localStorage e redireciona para a página de detalhes
+                  localStorage.setItem('produtoId', produto.id);
+                  window.location.href = 'detalhes.html';
+              });
           });
       })
      .catch(error => console.error('Erro ao carregar produtos:', error));
-  }
-  
+}

@@ -116,6 +116,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Carrega e exibe locais
     loadAndDisplayLocations();
+
+    // Carrega e exibe eventos
+    loadAndDisplayEvents();
 });
 
 // Função para editar um produto
@@ -243,3 +246,83 @@ async function deleteLocation(index, locationId) {
         alert('Erro ao deletar local.');
     }
 }
+
+// Carrega e exibe eventos
+async function loadAndDisplayEvents() {
+    try {
+        const response = await fetch('https://api-render-pet.onrender.com/evento', {
+            method: 'GET',
+        });
+
+        if (!response.ok) throw new Error('Erro ao buscar eventos');
+
+        const events = await response.json();
+        const container = document.getElementById('lista-eventos');
+
+        // Limpa o container antes de adicionar novos elementos
+        container.innerHTML = '';
+
+        events.forEach((event, index) => {
+            const eventElement = document.createElement('div');
+            eventElement.innerHTML = `
+                <h3>${event.nome}</h3>
+                <img src="${event.imagem}" alt="${event.nome}">
+                <p>${event.descrição}</p>
+                <button onclick="editEvent(${index}, '${event.id}')">Editar</button>
+                <button onclick="deleteEvent(${index}, '${event.id}')">Deletar</button>
+            `;
+            container.appendChild(eventElement);
+        });
+    } catch (error) {
+        console.error('Erro:', error);
+    }
+}
+
+// Função para editar um evento
+async function editEvent(index, eventId) {
+    const newName = prompt("Digite o novo nome do evento:");
+    const newImageURL = prompt("Digite a nova URL da imagem:");
+    const newDescription = prompt("Digite a nova descrição do evento:");
+
+    if (newName && newImageURL && newDescription) {
+        try {
+            const response = await fetch(`https://api-render-pet.onrender.com/evento/${eventId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ nome: newName, imagem: newImageURL, descrição: newDescription })
+            });
+
+            if (!response.ok) throw new Error('Erro ao editar evento');
+
+            alert(`${newName} foi editado com sucesso.`);
+            loadAndDisplayEvents(); // Recarrega a lista de eventos após a edição
+            location.reload(); // Recarrega a página
+        } catch (error) {
+            console.error('Erro:', error);
+            alert('Erro ao editar evento.');
+        }
+    } else {
+        alert("Por favor, preencha todos os campos.");
+    }
+}
+
+// Função para deletar um evento
+async function deleteEvent(index, eventId) {
+    try {
+        const response = await fetch(`https://api-render-pet.onrender.com/evento/${eventId}`, {
+            method: 'DELETE',
+        });
+
+        if (!response.ok) throw new Error('Erro ao deletar evento');
+
+        alert(`O evento foi deletado`);
+        loadAndDisplayEvents(); // Recarrega a lista de eventos após a exclusão
+        location.reload(); // Recarrega a página
+    } catch (error) {
+        console.error('Erro:', error);
+        alert('Erro ao deletar evento.');
+    }
+}
+

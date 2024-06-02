@@ -1,0 +1,171 @@
+html{
+    font-family:"Montserrat", sans-serif;
+  }
+  #cor{
+    background-color: #d6660a;
+  }
+  #corB{
+    background-color: #d6660a;
+    border: none;
+  }
+  #corB2{
+    background-color: #48067f;
+  }
+  #corB3{
+    background-color: #525151;
+  }
+  #corT{
+    color: #525151;
+  }
+  #corT2{
+    color: #d6660a; 
+  }
+  #corT3{
+    color: #48067f;
+  }
+  h6{
+    color: #d6660a; 
+  }
+  .productStyle{
+    border: 1px solid #CBCBCB !important;
+    border-radius: 30px;
+    width: 180px !important;
+  }
+  .container{
+    max-width: 100% !important;
+  }
+  .productStyle button{
+    background-color: #48067f;
+    margin-bottom: 13px;
+  }
+  .serviceStyle{
+    border: 1px solid #CBCBCB !important;
+    border-radius: 27px;
+    padding: 0;
+    width: 32% !important;
+  }
+  
+  .serviceStyle button{
+    background-color: #48067f;
+    margin-bottom: 13px;
+  }
+  .product-cont{
+    gap: 12px;
+    margin-left: 40px;
+  }
+
+.rate-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    input #rate-5:checked ~ label{
+        color: #48067f;
+    }
+    #rate-1:checked ~ form header:before{
+        content: "Ruim";
+    }
+    #rate-2:checked ~ form header:before{
+        content: "Não gostei";
+    }
+    #rate-3:checked ~ form header:before{
+        content: "Decente";
+    }
+    #rate-4:checked ~ form header:before{
+        content: "Gostei";
+    }
+    #rate-5:checked ~ form header:before{
+        content: "Excelente";
+    }
+
+.star-widget {
+    display: inline-block;
+}
+
+.star-widget input{
+    display: none;
+}
+
+.star-widget label {
+    font-size: 40px;
+    padding: 10px;
+    color: #6d6d6d;
+    cursor: pointer;
+    transition: color 0.2s;
+    float: right;
+}
+
+.star-widget label:hover,
+.star-widget input:not(:checked) ~ label:hover {
+    color: #d6660a;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color: #d6660a;
+}
+input:checked ~ label{
+    color: #d6660a;
+}
+
+.apresentaçãoProduto {
+    display: flex;
+    justify-content: center;
+  }
+
+form header{
+    width: 100%;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #48067f;
+    margin: 5px 0 20px 0 ;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #c7c7c7;
+    background: #fff;
+    padding: 10px;
+    font-size: 12px;
+    color: #111;
+    border-radius: 5px;
+    resize: none;
+}
+
+form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+form .btn button{
+    height: 100%;
+    width: 30%;
+    border: none;
+    outline: none;
+    background: #d6660a;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img-fluid{
+    display: flex;
+    align-items: center;
+}
