@@ -114,7 +114,7 @@
     <script>
         async function fetchArticles() {
             try {
-                const response = await fetch('https://api-render-pet.onrender.com/articles');
+                const response = await fetch('https://api-pet-pugp.onrender.com/articles');
                 if (!response.ok) {
                     throw new Error('Rota não encontrada');
                 }
@@ -145,7 +145,7 @@
                 image: null
             };
             try {
-                await fetch('https://api-render-pet.onrender.com/articles', {
+                await fetch('https://api-pet-pugp.onrender.com/articles', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

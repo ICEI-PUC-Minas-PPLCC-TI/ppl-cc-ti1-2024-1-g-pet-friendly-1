@@ -1,5 +1,5 @@
 window.onload = function() {
-    fetch('https://api-render-pet.onrender.com/produtos')
+    fetch('https://api-pet-pugp.onrender.com/produtos')
      .then(response => response.json())
      .then(produtos => {
           produtos.forEach(function(produto, index) {

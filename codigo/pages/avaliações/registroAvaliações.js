@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let selectedRating = 0;
 
     // Fetch product details and display them
-    fetch(`https://api-render-pet.onrender.com/produtos/${produtoId}`)
+    fetch(`https://api-pet-pugp.onrender.com/produtos/${produtoId}`)
         .then(response => response.json())
         .then(produto => {
             productDetails.innerHTML = `
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const comment = formAvaliar.querySelector('textarea').value;
 
         if (selectedRating && comment) {
-            fetch(`https://api-render-pet.onrender.com/produtos/${produtoId}`)
+            fetch(`https://api-pet-pugp.onrender.com/produtos/${produtoId}`)
                 .then(response => response.json())
                 .then(produto => {
                     // Update the ratings
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     produto.comentarios.push(newComment);
 
                     // Send updated product data back to the server
-                    fetch(`https://api-render-pet.onrender.com/produtos/${produtoId}`, {
+                    fetch(`https://api-pet-pugp.onrender.com/produtos/${produtoId}`, {
                         method: 'PUT',
                         headers: {
                             'Content-Type': 'application/json'

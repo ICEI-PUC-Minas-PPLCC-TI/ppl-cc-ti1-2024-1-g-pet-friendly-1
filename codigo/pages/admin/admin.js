@@ -1,7 +1,7 @@
 // Carrega e exibe produtos
 async function loadAndDisplayProducts() {
     try {
-        const response = await fetch('https://api-render-pet.onrender.com/produtos', {
+        const response = await fetch('https://api-pet-pugp.onrender.com/produtos', {
             method: 'GET',
         });
 
@@ -29,7 +29,7 @@ async function loadAndDisplayProducts() {
 // Carrega e exibe serviços
 async function loadAndDisplayServices() {
     try {
-        const response = await fetch('https://api-render-pet.onrender.com/servicos', {
+        const response = await fetch('https://api-pet-pugp.onrender.com/servicos', {
             method: 'GET',
         });
 
@@ -65,7 +65,7 @@ async function editService(index, serviceId) {
 
     if (newName && newImageURL && newDescription) {
         try {
-            const response = await fetch(`https://api-render-pet.onrender.com/servicos/${serviceId}`, {
+            const response = await fetch(`https://api-pet-pugp.onrender.com/servicos/${serviceId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -90,7 +90,7 @@ async function editService(index, serviceId) {
 // Função para deletar um serviço
 async function deleteService(index, serviceId) {
     try {
-        const response = await fetch(`https://api-render-pet.onrender.com/servicos/${serviceId}`, {
+        const response = await fetch(`https://api-pet-pugp.onrender.com/servicos/${serviceId}`, {
             method: 'DELETE',
         });
 
@@ -128,7 +128,7 @@ async function editProduct(index, productId) {
 
     if (newName && newImageURL) {
         try {
-            const response = await fetch(`https://api-render-pet.onrender.com/produtos/${productId}`, {
+            const response = await fetch(`https://api-pet-pugp.onrender.com/produtos/${productId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -153,7 +153,7 @@ async function editProduct(index, productId) {
 // Função para deletar um produto
 async function deleteProduct(index, productId) {
     try {
-        const response = await fetch(`https://api-render-pet.onrender.com/produtos/${productId}`, {
+        const response = await fetch(`https://api-pet-pugp.onrender.com/produtos/${productId}`, {
             method: 'DELETE',
         });
 
@@ -171,7 +171,7 @@ async function deleteProduct(index, productId) {
 // Carrega e exibe locais
 async function loadAndDisplayLocations() {
     try {
-        const response = await fetch('https://api-render-pet.onrender.com/local', {
+        const response = await fetch('https://api-pet-pugp.onrender.com/local', {
             method: 'GET',
         });
 
@@ -207,7 +207,7 @@ async function editLocation(index, locationId) {
 
     if (newName && newAddress && newImageURL) {
         try {
-            const response = await fetch(`https://api-render-pet.onrender.com/local/${locationId}`, {
+            const response = await fetch(`https://api-pet-pugp.onrender.com/local/${locationId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -232,7 +232,7 @@ async function editLocation(index, locationId) {
 // Função para deletar um local
 async function deleteLocation(index, locationId) {
     try {
-        const response = await fetch(`https://api-render-pet.onrender.com/local/${locationId}`, {
+        const response = await fetch(`https://api-pet-pugp.onrender.com/local/${locationId}`, {
             method: 'DELETE',
         });
 
@@ -250,7 +250,7 @@ async function deleteLocation(index, locationId) {
 // Carrega e exibe eventos
 async function loadAndDisplayEvents() {
     try {
-        const response = await fetch('https://api-render-pet.onrender.com/evento', {
+        const response = await fetch('https://api-pet-pugp.onrender.com/evento', {
             method: 'GET',
         });
 
@@ -286,7 +286,7 @@ async function editEvent(index, eventId) {
 
     if (newName && newImageURL && newDescription) {
         try {
-            const response = await fetch(`https://api-render-pet.onrender.com/evento/${eventId}`, {
+            const response = await fetch(`https://api-pet-pugp.onrender.com/evento/${eventId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -311,7 +311,7 @@ async function editEvent(index, eventId) {
 // Função para deletar um evento
 async function deleteEvent(index, eventId) {
     try {
-        const response = await fetch(`https://api-render-pet.onrender.com/evento/${eventId}`, {
+        const response = await fetch(`https://api-pet-pugp.onrender.com/evento/${eventId}`, {
             method: 'DELETE',
         });
 

@@ -14,7 +14,7 @@ document.getElementById('formEvento').addEventListener('submit', function(e) {
     };
 
     // Substituindo localStorage pela chamada à API
-    fetch('https://api-render-pet.onrender.com/evento', {
+    fetch('https://api-pet-pugp.onrender.com/evento', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

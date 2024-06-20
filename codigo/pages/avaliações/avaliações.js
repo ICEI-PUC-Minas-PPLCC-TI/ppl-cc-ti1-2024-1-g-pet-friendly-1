@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fetchProductDataForButton = () => {
     const produtoId = localStorage.getItem('produtoId');
   
-    fetch(`https://api-render-pet.onrender.com/produtos/${produtoId}`)
+    fetch(`https://api-pet-pugp.onrender.com/produtos/${produtoId}`)
       .then(response => response.json())
       .then(produto => {
         const avaliacoes = produto.avaliacoes;
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fetchProductDataForModal = () => {
     const produtoId = localStorage.getItem('produtoId');
   
-    fetch(`https://api-render-pet.onrender.com/produtos/${produtoId}`)
+    fetch(`https://api-pet-pugp.onrender.com/produtos/${produtoId}`)
       .then(response => response.json())
       .then(produto => {
         const avaliacoes = produto.avaliacoes;
