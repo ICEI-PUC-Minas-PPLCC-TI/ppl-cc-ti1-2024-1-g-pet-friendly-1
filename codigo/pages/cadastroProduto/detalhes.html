@@ -14,23 +14,25 @@
         <div class="d-flex flex-column flex-md-row align-items-center">
             <a href="../index.html"><img src="../imagens/logoPet.png" width="130px" height="100px" alt="Logo" class="me-3"></a>
             <nav class="d-flex flex-column flex-md-row justify-content-between w-100">
-                <ul class="nav flex-column flex-md-row">
-                    <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroLocal/local.html">Locais</a>
-          </li>
-          <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroProduto/produto.html">Produtos</a>
-          </li>
-          <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroServicos/servicos.html">Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroEventos/evento.html">Eventos</a>
-          </li>
-          <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../posts/post.html">Posts</a>
-          </li>
-                </ul>
+              <ul class="nav flex-column flex-md-row">
+                <li class="nav-item">
+                  <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroLocal/local.html">Locais</a>
+                </li>
+                <li class="nav-item">
+                  <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroProduto/produto.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroServicos/servicos.html">Serviços</a>
+                <li class="nav-item">
+                <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroEventos/evento.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../posts/post.html">Posts</a>
+                </li>
+                <li class="nav-item">
+                  <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../artigos/articles.html">Artigos</a>
+                </li>
+              </ul>
                 <ul class="nav flex-column flex-md-row">
                     <li class="nav-item">
                         <a id="logarLink" class="nav-link text-light rounded-4 px-3 fs-5 fs-md-4 fw-bold" href="../login/signup/loginForm.html" style="background-color: #d6660a;">Logar</a>
@@ -104,7 +106,59 @@
             </div>
     </div>
 
-
+    <footer id="corB3" class="mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <h6 class="mb-2">iPet</h6>
+            <p class="text-light">iPet é uma plataforma que visa facilitar donos de pet a encontrarem lugar ideal para seu amigo de 4 patas.</p>
+          </div>
+          <div class="col-md">
+            <h6 class="mb-2">Serviços</h6>
+            <p class="text-light">Restaurantes<br>Lojas<br>Shoppings</p>
+          </div>
+          <div class="col-md">
+            <h6 class="mb-2">Empresa</h6>
+            <p class="text-light">Quem Somos<br>Nossa Equipe<br>Contato</p>
+          </div>
+          <div class="col-md" style="flex: 3;">
+            <h6 class="mb-6">Receba Notícias</h6>
+            <form id="meuFormulario" action="#" method="post" class="d-flex">
+              <input style="height: 40px;" type="email" id="email" class="form-control me-1" placeholder="Seu e-mail" aria-label="Seu e-mail" aria-describedby="button-addon2" required>
+              <button style="    margin: 0 !important;
+              font-size: 11px !important;
+              width: 30%;" id="corB" class="btn ms-1 mt-3 me-0 text-light rounded-2 fs-6 fw-bold" type="submit">Se Inscrever</button>
+            </form>
+            <div style="    display: flex;
+            justify-content: end;">
+              <a style="    text-decoration: none;          " href="https://www.instagram.com/ipetoficialbh/" target="_blank">
+                <img style="    height: 50px;     margin-top: 10px;" src="../imagens/instagram.png" alt="Instagram" class="">
+              </a>
+              <a style="    text-decoration: none;          " href="https://www.x.com/ipetoficial/" target="_blank">
+                <img style="    height: 50px;     margin-top: 10px;" src="../imagens/twitter.png" alt="Twitter" class="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border-top: 2px solid white; width: 100%; margin-top: 0px;">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center" style="color: white">
+        <p class="mb-0 me-md-5">Copyright iPet</p>
+        <div class="d-flex align-items-center">
+          <img src="../imagens/loc.png" alt="Localização" class="me-2"> 
+          <p class="mb-0 me-md-5">Belo Horizonte, MG</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="../imagens/mail.png" alt="Email" class="me-2">
+          <p class="mb-0 me-md-5">ipet.contato@gmail.com</p>
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="../imagens/phone.png" alt="Telefone" class="me-2">
+          <p class="mb-0">+55 31 99999-9999</p>
+       </div>
+      </div>
+     </footer>
+     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const produtoId = localStorage.getItem('produtoId');
