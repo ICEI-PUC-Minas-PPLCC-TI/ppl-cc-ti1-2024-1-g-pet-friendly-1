@@ -24,13 +24,19 @@
             <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="#">Locais</a>
           </li>
           <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="./cadastroProduto/produto.html">Produtos</a>
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroProduto/produto.html">Produtos</a>
           </li>
           <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="./servicos.html">Serviços</a>
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroServicos/servicos.html">Serviços</a>
           </li>
           <li class="nav-item">
-            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="./posts/post.html">Posts</a>
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../cadastroEventos/evento.html">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../posts/post.html">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a id="corT" class="nav-link fw-bold fs-5 fs-md-2" href="../artigos/articles.html">Artigos</a>
           </li>
         </ul>
         <ul class="nav flex-column flex-md-row">
@@ -146,12 +152,9 @@
         .then(produto => {
             const productDetails = document.getElementById('productDetails');
             productDetails.innerHTML = `
-                <div class="col-md-6">
                     <img src="${produto.imagem}" class="img-fluid" alt="${produto.nome}">
                 </div>
-                <div class="col-md-6">
                     <h1>${produto.nome}</h1>
-                    <p>${produto.descricao}</p>
                 </div>
             `;
         })
@@ -161,4 +164,20 @@
             productDetails.innerHTML = `<p class="text-danger">Erro ao carregar detalhes do produto: ${error.message}</p>`;
         });
 });</script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+    
+        if (usuarioLogado) {
+          document.getElementById('logarLink').style.display = 'none';
+          document.getElementById('inscreverLink').style.display = 'none';
+          document.getElementById('contaIcon').style.display = 'inline-block';
+        } else {
+          document.getElementById('contaIcon').style.display = 'none';
+          document.getElementById('logarLink').style.display = 'inline-block';
+          document.getElementById('inscreverLink').style.display = 'inline-block';
+        }
+      });
+    </script>
+    <script src="../login/signup/auth.js"></script>
 </body>
