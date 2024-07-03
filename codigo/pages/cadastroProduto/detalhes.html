@@ -102,7 +102,7 @@
           <script src="../avaliações/avaliações.js"></script>
     </div>
             <div class="BotaoCarrinho">
-                <button class="btn btn-primary mt-3" id="addToCartButton">Adicionar ao Carrinho</button>
+                <button class="btn btn-primary mt-3" id="addToCartButton">Ver no Site</button>
             </div>
     </div>
 
@@ -181,8 +181,8 @@
 
                     // Adiciona o event listener ao botão
                     document.getElementById('addToCartButton').addEventListener('click', function() {
-                        alert('Produto adicionado ao carrinho!');
-                    });
+    window.location.href = 'https://shopee.com.br';
+});
                 })
                 .catch(error => console.error('Erro ao carregar detalhes do produto:', error));
         });
