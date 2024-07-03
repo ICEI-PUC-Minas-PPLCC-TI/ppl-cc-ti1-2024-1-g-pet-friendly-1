@@ -1,31 +1,37 @@
 <<<<<<< HEAD
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: iPet
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Iannini
+    given-names: Rafael
+  - family-names: Stransky
+    given-names: Victor
+  - family-names: Gomes
+    given-names: João
+  - family-names: Ayad
+    given-names: Amin
+  - family-names: Rocha
+    given-names: Gabriel
+  - family-names: Rezende
+    given-names: Raphael
+  - family-names: Regis
+    given-names: Eduardo
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Curto
+    given-names: Hayala
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Almeida
+    given-names: Carolina
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Rodrigues
+    given-names: Cristiano
 keywords:
-  - 
-  - 
+  - Pets
+  - Pet-Friendly
 repository-code: 
 license: CC-BY-4.0
 version: 1.0.0
@@ -33,31 +39,37 @@ date-released: 2022-07-14
 =======
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: iPet
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Iannini
+    given-names: Rafael
+  - family-names: Stransky
+    given-names: Victor
+  - family-names: Gomes
+    given-names: João
+  - family-names: Ayad
+    given-names: Amin
+  - family-names: Rocha
+    given-names: Gabriel
+  - family-names: Rezende
+    given-names: Raphael
+  - family-names: Regis
+    given-names: Eduardo
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Curto
+    given-names: Hayala
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Almeida
+    given-names: Carolina
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Rodrigues
+    given-names: Cristiano
 keywords:
-  - 
-  - 
+  - Pets
+  - Pet-Friendly
 repository-code: 
 license: CC-BY-4.0
 version: 1.0.0
