@@ -11,7 +11,7 @@
           <div class="modal-content" style="border: none;">
             <div class="modal-header" style="background-color: rgb(214, 102, 10); color: white; display: flex; justify-content: space-between; align-items: center;">
               <h5 class="modal-title">Faça login</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background: none; border: none; color: white; font-size: 20px;">&times;</button>
+              <button type="button" class="btn-close" id="closeButton" data-bs-dismiss="modal" aria-label="Close" style="background: none; border: none; color: white; font-size: 20px;">&times;</button>
             </div>
             <div class="modal-body" style="background-color: white; color: #48067f; padding: 20px;">
               <form id="formLogin">
@@ -32,5 +32,10 @@
         </div>
       </div>
       <script src="./auth.js"></script>
+      <script>
+        document.getElementById('closeButton').addEventListener('click', function() {
+            window.location.href = "../../index.html";
+        });
+    </script>
 </body>
 </html>
