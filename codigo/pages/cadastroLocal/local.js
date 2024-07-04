@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     function loadServices() {
         // Substituindo localStorage pela chamada à API
-        fetch('https://api-pet-pugp.onrender.com/local')
+        fetch('https://api-render-pet.onrender.com/local')
         .then(response => response.json())
         .then(local => {
               local.forEach(function(local, index) {

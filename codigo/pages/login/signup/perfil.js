@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function() {
     try {
-        const response = await fetch('https://api-pet-pugp.onrender.com/usuarios');
+        const response = await fetch('https://api-render-pet.onrender.com/usuarios');
         
         if (!response.ok) { // Verifica se a resposta é válida
             throw new Error(`HTTP error status: ${response.status}`);

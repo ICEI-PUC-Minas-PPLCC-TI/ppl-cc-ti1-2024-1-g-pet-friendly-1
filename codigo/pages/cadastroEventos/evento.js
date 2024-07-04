@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     function loadEvents() {
-        fetch('https://api-pet-pugp.onrender.com/evento')
+        fetch('https://api-render-pet.onrender.com/evento')
             .then(response => response.json())
             .then(eventos => {
                 const carouselInner = document.querySelector('.carousel-inner');
